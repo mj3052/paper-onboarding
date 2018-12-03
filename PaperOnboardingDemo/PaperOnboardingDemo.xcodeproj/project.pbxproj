@@ -18,7 +18,6 @@
 		845C48CF1CFDB32A002BE949 /* ConstraintsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7E5E11CCE590700C9F001 /* ConstraintsHelper.swift */; };
 		845C48D01CFDB32D002BE949 /* Configuring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7E5EC1CCE598A00C9F001 /* Configuring.swift */; };
 		845C48D11CFDB332002BE949 /* OnboardingContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7E5E71CCE595F00C9F001 /* OnboardingContentView.swift */; };
-		845C48D21CFDB337002BE949 /* OnboardingContantViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7E5E61CCE595F00C9F001 /* OnboardingContantViewItem.swift */; };
 		845C48D31CFDB33D002BE949 /* FillAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7E5F01CCE59A400C9F001 /* FillAnimationView.swift */; };
 		845C48D41CFDB342002BE949 /* GestureControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7E6011CCE59BD00C9F001 /* GestureControl.swift */; };
 		84A773A41CCE545200EF4EB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A773A31CCE545200EF4EB0 /* AppDelegate.swift */; };
@@ -31,7 +30,7 @@
 		84C7E5DC1CCE585700C9F001 /* PageContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7E5D81CCE585700C9F001 /* PageContainer.swift */; };
 		84C7E5DE1CCE585700C9F001 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7E5D91CCE585700C9F001 /* PageView.swift */; };
 		84C7E5E21CCE590700C9F001 /* ConstraintsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7E5E11CCE590700C9F001 /* ConstraintsHelper.swift */; };
-		84C7E5E81CCE595F00C9F001 /* OnboardingContantViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7E5E61CCE595F00C9F001 /* OnboardingContantViewItem.swift */; };
+		84C7E5E81CCE595F00C9F001 /* OnboardingContentViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7E5E61CCE595F00C9F001 /* OnboardingContentViewItem.swift */; };
 		84C7E5EA1CCE595F00C9F001 /* OnboardingContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7E5E71CCE595F00C9F001 /* OnboardingContentView.swift */; };
 		84C7E5ED1CCE598A00C9F001 /* Configuring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7E5EC1CCE598A00C9F001 /* Configuring.swift */; };
 		84C7E5F11CCE59A400C9F001 /* FillAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7E5F01CCE59A400C9F001 /* FillAnimationView.swift */; };
@@ -44,6 +43,9 @@
 		9DD26A851EE596120072071F /* PaperOnboardingDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD26A841EE596120072071F /* PaperOnboardingDataSource.swift */; };
 		9DD26A871EE596340072071F /* PaperOnboardingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD26A821EE595F20072071F /* PaperOnboardingDelegate.swift */; };
 		9DD26A891EE596350072071F /* PaperOnboardingDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD26A841EE596120072071F /* PaperOnboardingDataSource.swift */; };
+		C75CECE821B58B7A00390763 /* InfOnboardingContentViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75CECE721B58B7A00390763 /* InfOnboardingContentViewItem.swift */; };
+		C75CECE921B58D7400390763 /* InfOnboardingContentViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75CECE721B58B7A00390763 /* InfOnboardingContentViewItem.swift */; };
+		C75CECF121B5A17300390763 /* OnboardingContentViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C7E5E61CCE595F00C9F001 /* OnboardingContentViewItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,7 +89,7 @@
 		84C7E5D81CCE585700C9F001 /* PageContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContainer.swift; sourceTree = "<group>"; };
 		84C7E5D91CCE585700C9F001 /* PageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 		84C7E5E11CCE590700C9F001 /* ConstraintsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintsHelper.swift; sourceTree = "<group>"; };
-		84C7E5E61CCE595F00C9F001 /* OnboardingContantViewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingContantViewItem.swift; sourceTree = "<group>"; };
+		84C7E5E61CCE595F00C9F001 /* OnboardingContentViewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingContentViewItem.swift; sourceTree = "<group>"; };
 		84C7E5E71CCE595F00C9F001 /* OnboardingContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingContentView.swift; sourceTree = "<group>"; };
 		84C7E5EC1CCE598A00C9F001 /* Configuring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuring.swift; sourceTree = "<group>"; };
 		84C7E5F01CCE59A400C9F001 /* FillAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FillAnimationView.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 		84C7E6011CCE59BD00C9F001 /* GestureControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestureControl.swift; sourceTree = "<group>"; };
 		9DD26A821EE595F20072071F /* PaperOnboardingDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaperOnboardingDelegate.swift; sourceTree = "<group>"; };
 		9DD26A841EE596120072071F /* PaperOnboardingDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaperOnboardingDataSource.swift; sourceTree = "<group>"; };
+		C75CECE721B58B7A00390763 /* InfOnboardingContentViewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfOnboardingContentViewItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,7 +236,8 @@
 		84C7E5E51CCE595F00C9F001 /* Item */ = {
 			isa = PBXGroup;
 			children = (
-				84C7E5E61CCE595F00C9F001 /* OnboardingContantViewItem.swift */,
+				84C7E5E61CCE595F00C9F001 /* OnboardingContentViewItem.swift */,
+				C75CECE721B58B7A00390763 /* InfOnboardingContentViewItem.swift */,
 			);
 			path = Item;
 			sourceTree = "<group>";
@@ -333,7 +337,7 @@
 					};
 					84A7739F1CCE545200EF4EB0 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = 34MUF9YXTA;
+						DevelopmentTeam = ZU9WEF2738;
 						LastSwiftMigration = 0910;
 					};
 				};
@@ -403,6 +407,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C75CECF121B5A17300390763 /* OnboardingContentViewItem.swift in Sources */,
+				C75CECE921B58D7400390763 /* InfOnboardingContentViewItem.swift in Sources */,
 				845C48CE1CFDB325002BE949 /* PageViewItem.swift in Sources */,
 				845C48CF1CFDB32A002BE949 /* ConstraintsHelper.swift in Sources */,
 				845C48CB1CFDB317002BE949 /* PaperOnboarding.swift in Sources */,
@@ -413,7 +419,6 @@
 				845C48CD1CFDB321002BE949 /* PageContainer.swift in Sources */,
 				9DD26A891EE596350072071F /* PaperOnboardingDataSource.swift in Sources */,
 				845C48D41CFDB342002BE949 /* GestureControl.swift in Sources */,
-				845C48D21CFDB337002BE949 /* OnboardingContantViewItem.swift in Sources */,
 				845C48CC1CFDB31C002BE949 /* PageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,13 +431,14 @@
 				84C7E5ED1CCE598A00C9F001 /* Configuring.swift in Sources */,
 				84A773A41CCE545200EF4EB0 /* AppDelegate.swift in Sources */,
 				84C7E5F11CCE59A400C9F001 /* FillAnimationView.swift in Sources */,
+				C75CECE821B58B7A00390763 /* InfOnboardingContentViewItem.swift in Sources */,
 				84C7E5CE1CCE571800C9F001 /* PaperOnboarding.swift in Sources */,
 				84C7E5DC1CCE585700C9F001 /* PageContainer.swift in Sources */,
 				843A19651CD0B49E00F37344 /* Images.swift in Sources */,
 				9DD26A831EE595F20072071F /* PaperOnboardingDelegate.swift in Sources */,
 				84C7E6021CCE59BD00C9F001 /* GestureControl.swift in Sources */,
 				84C7E5DA1CCE585700C9F001 /* PageViewItem.swift in Sources */,
-				84C7E5E81CCE595F00C9F001 /* OnboardingContantViewItem.swift in Sources */,
+				84C7E5E81CCE595F00C9F001 /* OnboardingContentViewItem.swift in Sources */,
 				84C7E5E21CCE590700C9F001 /* ConstraintsHelper.swift in Sources */,
 				9DD26A851EE596120072071F /* PaperOnboardingDataSource.swift in Sources */,
 				84C7E5DE1CCE585700C9F001 /* PageView.swift in Sources */,
@@ -482,7 +488,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = PaperOnboarding/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ramotion.PaperOnboarding;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -506,7 +512,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = PaperOnboarding/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ramotion.PaperOnboarding;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -630,9 +636,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = 34MUF9YXTA;
+				DEVELOPMENT_TEAM = ZU9WEF2738;
 				INFOPLIST_FILE = PaperOnboardingDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ramotion.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -646,9 +652,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = 34MUF9YXTA;
+				DEVELOPMENT_TEAM = ZU9WEF2738;
 				INFOPLIST_FILE = PaperOnboardingDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ramotion.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";

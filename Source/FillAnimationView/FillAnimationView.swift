@@ -37,7 +37,6 @@ extension FillAnimationView {
     }
 
     func fillAnimation(_ color: UIColor, centerPosition: CGPoint, duration: Double) {
-
         let radius = max(bounds.size.width, bounds.size.height) * 1.5
         let circle = createCircleLayer(centerPosition, color: color)
 

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PageViewItem: UIView {
+open class PageViewItem: UIView {
 
     let circleRadius: CGFloat
     let selectedCircleRadius: CGFloat
@@ -32,7 +32,7 @@ class PageViewItem: UIView {
         commonInit()
     }
 
-    required init?(coder _: NSCoder) {
+    required public init?(coder _: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }
@@ -119,6 +119,7 @@ extension PageViewItem {
         
         return imageView
     }
+    
 }
 
 // MARK: animations

@@ -97,8 +97,9 @@ public extension PaperOnboarding {
                 (self.delegate as? PaperOnboardingDelegate)?.onboardingDidTransitonToIndex(index)
             })
 
-            if let postion = pageView?.positionItemIndex(index, onView: self) {
-                fillAnimationView?.fillAnimation(backgroundColor(currentIndex), centerPosition: postion, duration: 0.5)
+            if let _ = pageView?.positionItemIndex(index, onView: self) {
+                fillAnimationView?.backgroundColor = backgroundColor(currentIndex)
+//                fillAnimationView?.fillAnimation(backgroundColor(currentIndex), centerPosition: postion, duration: 0.5)
             }
             pageView?.currentIndex(index, animated: animated)
             contentView?.currentItem(index, animated: animated)
@@ -125,7 +126,9 @@ extension PaperOnboarding {
         }
         itemsInfo = createItemsInfo()
         translatesAutoresizingMaskIntoConstraints = false
+        
         fillAnimationView = FillAnimationView.animationViewOnView(self, color: backgroundColor(currentIndex))
+        
         contentView = OnboardingContentView.contentViewOnView(self,
                                                               delegate: self,
                                                               itemsCount: itemsCount,

@@ -30,6 +30,7 @@ class OnboardingContentView: UIView {
         super.init(frame: CGRect.zero)
 
         commonInit()
+        
     }
 
     required init?(coder _: NSCoder) {
@@ -44,8 +45,8 @@ extension OnboardingContentView {
     func currentItem(_ index: Int, animated _: Bool) {
 
         let showItem = createItem(index)
+        
         showItemView(showItem, duration: Constants.showDuration)
-
         hideItemView(currentItem, duration: Constants.hideDuration)
 
         currentItem = showItem
@@ -88,10 +89,10 @@ extension OnboardingContentView {
     fileprivate func createItem(_ index: Int) -> OnboardingContentViewItem {
 
         guard let info = delegate?.onboardingItemAtIndex(index) else {
-            return OnboardingContentViewItem.itemOnView(self)
+            return InfOnboardingContentViewItem.itemOnView(self)
         }
 
-        let item = Init(OnboardingContentViewItem.itemOnView(self)) {
+        let item = Init(InfOnboardingContentViewItem.itemOnView(self)) {
             $0.imageView?.image = info.informationImage
             $0.titleLabel?.text = info.title
             $0.titleLabel?.font = info.titleFont
@@ -109,41 +110,50 @@ extension OnboardingContentView {
 // MARK: animations
 
 extension OnboardingContentView {
-
+    
     fileprivate func hideItemView(_ item: OnboardingContentViewItem?, duration: Double) {
         guard let item = item else {
             return
         }
-
+        
         item.descriptionBottomConstraint?.constant -= Constants.dyOffsetAnimation
         item.titleCenterConstraint?.constant *= 1.3
-
+        
+        (item as? InfOnboardingContentViewItem)?.videoView.alpha = 0
+        
         UIView.animate(withDuration: duration,
                        delay: 0,
                        options: .curveEaseOut, animations: {
-                           item.alpha = 0
-                           self.layoutIfNeeded()
-                       },
+                        item.alpha = 0
+                        self.layoutIfNeeded()
+        },
                        completion: { _ in
-                           item.removeFromSuperview()
+                        item.removeFromSuperview()
         })
     }
-
+    
     fileprivate func showItemView(_ item: OnboardingContentViewItem, duration: Double) {
         item.descriptionBottomConstraint?.constant = Constants.dyOffsetAnimation
         item.titleCenterConstraint?.constant /= 2
         item.alpha = 0
         layoutIfNeeded()
-
+        
+        (item as? InfOnboardingContentViewItem)?.videoView.alpha = 0
+        
         item.descriptionBottomConstraint?.constant = 0
         item.titleCenterConstraint?.constant *= 2
-
+        
         UIView.animate(withDuration: duration,
                        delay: 0,
                        options: .curveEaseOut, animations: {
-                           item.alpha = 0
-                           item.alpha = 1
-                           self.layoutIfNeeded()
-        }, completion: nil)
+                        item.alpha = 0
+                        item.alpha = 1
+                        self.layoutIfNeeded()
+        }, completion: { _ in
+            UIView.animate(withDuration: 0.4, animations: {
+            (item as? InfOnboardingContentViewItem)?.videoView.alpha = 1
+            })
+        })
     }
+    
 }

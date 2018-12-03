@@ -19,7 +19,7 @@ open class OnboardingContentViewItem: UIView {
     open var titleLabel: UILabel?
     open var descriptionLabel: UILabel?
 
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
     }
@@ -33,7 +33,7 @@ open class OnboardingContentViewItem: UIView {
 
 extension OnboardingContentViewItem {
 
-    class func itemOnView(_ view: UIView) -> OnboardingContentViewItem {
+    @objc class func itemOnView(_ view: UIView) -> OnboardingContentViewItem {
         let item = Init(OnboardingContentViewItem(frame: CGRect.zero)) {
             $0.backgroundColor = .clear
             $0.translatesAutoresizingMaskIntoConstraints = false
@@ -154,6 +154,7 @@ private extension OnboardingContentViewItem {
             $0.translatesAutoresizingMaskIntoConstraints = false
             $0.textAlignment = .center
             $0.textColor = .white
+            $0.numberOfLines = 0
         }
     }
 
@@ -168,13 +169,13 @@ private extension OnboardingContentViewItem {
         // add constratints
         informationImageWidthConstraint = imageView >>>- {
             $0.attribute = NSLayoutConstraint.Attribute.width
-            $0.constant = 188
+            $0.constant = UIScreen.main.bounds.width * 0.8
             return
         }
         
         informationImageHeightConstraint = imageView >>>- {
             $0.attribute = NSLayoutConstraint.Attribute.height
-            $0.constant = 188
+            $0.constant = UIScreen.main.bounds.width * 0.8
             return
         }
 
